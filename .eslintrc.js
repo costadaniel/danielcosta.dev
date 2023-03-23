@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    "plugin:astro/recommended",
-  ],
+  extends: ["plugin:astro/recommended"],
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -20,5 +18,5 @@ module.exports = {
       },
     },
   ],
-}
+};
 // See more in: https://ota-meshi.github.io/eslint-plugin-astro/user-guide/
