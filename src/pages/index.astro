@@ -1,42 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import HomepageLayout from "../layouts/Homepage.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Daniel Costa">
-  <main>
-    <h1>👋 Hi, my name is<span class="text-gradient">&nbsp;Daniel</span></h1>
-    <h2>I'm a<span class="text-gradient">&nbsp;Developer</span></h2>
-  </main>
-</Layout>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  h1 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0;
-  }
-  h2 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-</style>
+<HomepageLayout title="Daniel Costa">
+  <Card />
+</HomepageLayout>
